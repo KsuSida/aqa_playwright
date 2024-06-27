@@ -1,11 +1,20 @@
 {
-  "name": "aqa_playwright",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "",
-  "license": "ISC"
+	"name": "aqa_playwright",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"format": "npx prettier . --check",
+		"lint": "npx eslint ."
+	},
+	"author": "",
+	"type": "module",
+	"license": "ISC",
+	"devDependencies": {
+		"@eslint/js": "^9.5.0",
+		"eslint": "^9.5.0",
+		"globals": "^15.6.0",
+		"prettier": "3.3.2"
+	}
 }
