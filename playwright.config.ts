@@ -24,7 +24,7 @@ export default defineConfig({
 	reporter: 'html',
 	/* Shared settings for all the projects below. See https://playwright.dev/docs/api/class-testoptions. */
 
-	testIgnore: '**.skip.spec.ts',
+	// testIgnore: '**.skip.spec.ts',
 	testMatch: '**.spec.ts',
 	// grep: new RegExp('has title'),
 
