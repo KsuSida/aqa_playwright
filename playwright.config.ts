@@ -4,7 +4,7 @@ import { defineConfig, devices } from '@playwright/test';
  * Read environment variables from file.
  * https://github.com/motdotla/dotenv
  */
-// import dotenv from 'dotenv';
+import dotenv from 'dotenv/config';
 // dotenv.config({ path: path.resolve(__dirname, '.env') });
 
 /**
@@ -51,10 +51,10 @@ export default defineConfig({
 			testMatch: '**.spec.ts',
 			use: {
 				headless: false,
-				baseURL: 'https://qauto.forstudy.space/',
+				baseURL: process.env.BASE_URL,
 				httpCredentials: {
-					username: 'guest',
-					password: 'welcome2qauto',
+					username: process.env.USER_NAME!,
+					password: process.env.USER_NAME!,
 				},
 				// ...devices['Desktop Chrome']
 			},
