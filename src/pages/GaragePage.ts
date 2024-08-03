@@ -29,7 +29,7 @@ export class GaragePage extends BasePage {
 		return this._addCarBrandSelect.selectOption(brand);
 	}
 
-	async addCar(brand: 'Audi' | 'BWM' | 'Ford' | 'Porsche' | 'Fiat', model: '911' | 'TT', mileage: number) {
+	async addCar(brand: 'Audi' | 'BWM' | 'Ford' | 'Porsche' | 'Fiat', model: '911' | 'TT' | 'Fusion', mileage: number) {
 		await this._addCarBtn.click();
 		await this.selectBrand(brand);
 		await this._addCarModelSelect.selectOption(model);
