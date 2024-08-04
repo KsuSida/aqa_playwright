@@ -79,6 +79,18 @@ export default defineConfig({
 				headless: false,
 				...devices['Desktop Chrome'],
 			},
+			dependencies: ['login'],
+		},
+		{
+			name: 'api',
+			testDir: './tests/api',
+			testMatch: '**.spec.ts',
+			use: {
+				headless: false,
+				...devices['Desktop Chrome'],
+				storageState: 'session-storage.json',
+			},
+			dependencies: ['login'],
 		},
 	],
 
