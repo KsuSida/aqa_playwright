@@ -91,6 +91,7 @@ export default defineConfig({
 				storageState: 'session-storage.json',
 			},
 			dependencies: ['login'],
+
 		},
 	],
 
