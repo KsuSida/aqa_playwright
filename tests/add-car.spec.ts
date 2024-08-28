@@ -37,7 +37,7 @@ test.describe('Check add car model pop-up', () => {
 		await expect(garagePage.carItem).toHaveCount(2);
 	});
 
-	test.only('user can log out from garage page', async ({ page }) => {
+	test('user can log out from garage page', async ({ page }) => {
 		await garagePage.sideBar.logOutBtn.click();
 		// const localStorageValue = await page.evaluate(() => {
 		// 	return localStorage.getItem('value');

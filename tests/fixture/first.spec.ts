@@ -8,7 +8,7 @@ test('log as guest', async ({ guestPage }) => {
 	await guestPage.pause();
 });
 
-test.only('log from storageState', async ({ storagePage }) => {
+test('log from storageState', async ({ storagePage }) => {
 	await storagePage.goto('/');
 	await storagePage.pause();
 });
