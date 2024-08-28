@@ -1,14 +1,14 @@
 import { loggedPageTest as test } from '../../fixtures/loggedPage';
 
 test('log as user', async ({ adminPage }) => {
-	await adminPage.pause();
+	await adminPage;
 });
 
 test('log as guest', async ({ guestPage }) => {
-	await guestPage.pause();
+	await guestPage;
 });
 
 test('log from storageState', async ({ storagePage }) => {
 	await storagePage.goto('/');
-	await storagePage.pause();
+	await storagePage;
 });
