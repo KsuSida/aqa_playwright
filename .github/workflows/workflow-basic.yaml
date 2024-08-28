@@ -19,14 +19,9 @@ jobs:
         run: npm ci
       - name: Run your tests
         run: npx playwright test
-        -name: Save report
-        uses: actions/upload-artifact@v3
+      - uses: actions/upload-artifact@v3
+        if: always()
         with:        
+          name: playwright-report
           path: playwright-report/
-          name: playwright-report
-        if: failure() || success()
-      -name: Get report
-        uses: actions/download-artifact@v3
-        with:
-          name: playwright-report
-        if: failure() || success()
+          retention-days: 30
