@@ -65,7 +65,7 @@ export default defineConfig({
 			testDir: './tests/storage',
 			testMatch: '**.spec.ts',
 			use: {
-				headless: false,
+				// headless: false,
 				...devices['Desktop Chrome'],
 				storageState: 'session-storage.json',
 			},
@@ -76,7 +76,7 @@ export default defineConfig({
 			testDir: './tests/fixture',
 			testMatch: '**.spec.ts',
 			use: {
-				headless: false,
+				// headless: false,
 				...devices['Desktop Chrome'],
 			},
 			dependencies: ['login'],
@@ -86,7 +86,7 @@ export default defineConfig({
 			testDir: './tests/api',
 			testMatch: '**.spec.ts',
 			use: {
-				headless: false,
+				// headless: false,
 				...devices['Desktop Chrome'],
 				storageState: 'session-storage.json',
 			},

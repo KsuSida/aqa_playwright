@@ -16,6 +16,6 @@ test.describe('Check storage', async () => {
 		const garagePage = new GaragePage(page);
 		await garagePage.navigate();
 		await garagePage.addCar('Porsche', '911', 12345);
-		await page.pause();
+		// await page.pause();
 	});
 });
