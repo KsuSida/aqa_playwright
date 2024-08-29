@@ -15,6 +15,7 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 18
+          headless: true
       - name: Install dependencies
         run: npm ci
       - name: Run your tests
